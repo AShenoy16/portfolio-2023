@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(0,0,0)] text-white h-screen">
+    <div className="bg-[rgb(0,0,0)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>AS Porfolio</title>
       </Head>
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Hero */}
       {/* sections allow you to scroll back to that place*/}
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
 
