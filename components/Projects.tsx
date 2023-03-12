@@ -37,6 +37,7 @@ const ProjectCard = ({
               className="w-full h-full object-cover rounded-2xl"
             />
 
+            
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
@@ -89,9 +90,7 @@ function Projects({}: Props) {
           className=" text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          blanditiis quibusdam similique id fuga eaque voluptas doloremque,
-          repudiandae, at saepe eligendi dicta ad voluptate impedit repellendus
-          maiores! Aut, dolore sunt.
+          blanditiis.
         </motion.p>
 
         <div className="mt-20 flex flex-wrap gap-7 justify-start">
