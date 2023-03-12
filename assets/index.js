@@ -140,6 +140,7 @@ const technologies = [
     name: "figma",
     icon: figma,
     progress: 88
+
   },
 ];
 
