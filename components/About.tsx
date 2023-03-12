@@ -4,6 +4,7 @@ import { services } from "../assets";
 import { backend, creator, mobile, web } from "../assets/index";
 import Tilt from "react-tilt";
 import { fadeIn, textVariant } from "../utils/motion";
+import {styles} from "../styles/styles";
 
 import type { StaticImageData } from "next/image";
 
@@ -22,12 +23,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="bg-gradient-to-br from-red-600 to-purple-900 rounded-[20px] py-5 px-12 min-h-[230px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[230px] flex justify-evenly items-center flex-col"
         >
           <img
             src={icon.src}
@@ -48,16 +44,13 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p>Introduction</p>
-        <h2>Overview.</h2>
+    <div>
+      <motion.div variants={textVariant()}
+      className="flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4"
-      >
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4">
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
         Three.js. I'm a quick learner and collaborate closely with clients to
@@ -70,8 +63,8 @@ function About({}: Props) {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
-export default About;
+export default About
