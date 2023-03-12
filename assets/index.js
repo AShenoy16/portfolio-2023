@@ -75,7 +75,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Passionate Programmer",
+    title: "Software Engineer",
     icon: creator,
   },
 ];

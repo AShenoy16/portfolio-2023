@@ -13,7 +13,7 @@ export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
       "<Hi I'm Adi/>",
-      "Software Engineer",
+      "Programmer",
       "Food lover.py",
       "Innovator.tsx",
     ],
@@ -24,7 +24,7 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col items-center justify-evenly md:flex-row max-w-5xl mx-auto md:justify-between overflow-hidden">
       <div>
-        <h1 className="max-w-5xl text-3xl md:text-4xl lg:text-6xl font-mono px-10 mb:py-178 text-center md:text-left pt-10">
+        <h1 className="max-w-5xl text-3xl md:text-4xl lg:text-6xl font-mono px-10 mb:py-178 text-center md:text-left pt-11">
           <span>{text}</span>
           <Cursor cursorColor="#ED2939" />
         </h1>
