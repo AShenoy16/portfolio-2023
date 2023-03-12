@@ -40,7 +40,6 @@ export default function Home() {
 
       <section id="skills" className="snap-start">
         <Skills />
-
       </section>
 
       {/* Projects */}

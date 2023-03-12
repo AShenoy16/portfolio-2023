@@ -9,6 +9,10 @@ interface SkillCardProps {
   name: string;
   icon: StaticImageData;
   index: number;
+  progress: number;
+}
+
+const SkillCard = ({ icon, name, index, progress }: SkillCardProps) => {
 }
 
 const SkillCard = ({ icon, name, index }: SkillCardProps) => {
@@ -23,6 +27,7 @@ const SkillCard = ({ icon, name, index }: SkillCardProps) => {
           />
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white h-36 w-36 rounded-full z-0">
+            <p className="text-3xl font-bold text-black">{progress}%</p>
             <p className="text-3xl font-bold text-black">100%</p>
           </div>
         </div>

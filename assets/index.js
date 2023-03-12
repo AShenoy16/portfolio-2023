@@ -84,50 +84,63 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    progress: 88
   },
   {
     name: "CSS 3",
     icon: css,
+    progress: 88
   },
   {
     name: "JavaScript",
     icon: javascript,
+    progress: 88
   },
   {
     name: "TypeScript",
     icon: typescript,
+    progress: 88
   },
   {
     name: "React JS",
     icon: reactjs,
+    progress: 88
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    progress: 88
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    progress: 88
   },
   {
     name: "Node JS",
     icon: nodejs,
+    progress: 88
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    progress: 88
   },
   {
     name: "Three JS",
     icon: threejs,
+    progress: 88
   },
   {
     name: "git",
     icon: git,
+    progress: 88
   },
   {
     name: "figma",
     icon: figma,
+    progress: 88
+
   },
 ];
 
