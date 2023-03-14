@@ -1,14 +1,15 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { logo } from "@/assets";
+import { styles } from "@/styles/styles";
 
 type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header
-      className="sticky top-0 p-5 flex items-start justify-between max-w-5xl mx-auto z- 20
-    xl:items-center"
+    <nav
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black`}
     >
       {/* Above makes it stick to the top and automatically splits the icons in between */}
       {/* Also layers it above everything else and keeps max width between them */}
@@ -24,60 +25,35 @@ export default function Header({}: Props) {
           opacity: 1,
           scale: 1,
         }}
-        transition = {{
-          duration: 1
+        transition={{
+          duration: 1,
         }}
+        className=" w-full flex justify-between items-center max-w-5xl mx-auto"
       >
+        <img src={logo.src} alt="logo" className="w-11 h-11 object-contain mx-[-1px] md:mx-[-5px]" />
+
+        <div className="flex justify-start">
+          <SocialIcon
+            url="https://github.com/AShenoy16"
+            fgColor="gray"
+            bgColor=" transparent"
+          />
+
+          <SocialIcon
+            url="https://www.linkedin.com/in/aditya-shenoy-692b5a247/"
+            fgColor="gray"
+            bgColor=" transparent"
+          />
+
+          <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="gray"
+            bgColor=" transparent"
+          />
+        </div>
         {/* Motion.div makes the div animated */}
-        <SocialIcon
-          url="https://github.com/AShenoy16"
-          fgColor="gray"
-          bgColor=" transparent"
-        />
-
-        <SocialIcon
-          url="https://github.com/AShenoy16"
-          fgColor="gray"
-          bgColor=" transparent"
-        />
-
-        <SocialIcon
-          url="https://github.com/AShenoy16"
-          fgColor="gray"
-          bgColor=" transparent"
-        />
       </motion.div>
-
-      {/* Centres the text with the icons and makes a pointer over the entire div icon and text*/}
-      <motion.div 
-      
-      initial={{
-        x: 500,
-        opacity: 0,
-        scale: 0.5,
-      }}
-      animate={{
-        x: 0,
-        opacity: 1,
-        scale: 1,
-      }}
-      transition = {{
-        duration: 1
-      }}
-      
-      className=" flex flex-row items-center text-gray-300 cursor-pointer">
-        <SocialIcon
-          className="cursor-pointer"
-          network="telegram"
-          fgColor="gray"
-          bgColor=" transparent"
-        />
-
-        {/* This makes the text only come on medium screen */}
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get in touch
-        </p>
-      </motion.div>
-    </header>
+    </nav>
   );
 }

@@ -13,7 +13,7 @@ export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
       "<Hi I'm Adi/>",
-      "Programmer",
+      "Software Engineer",
       "Food lover.py",
       "Innovator.tsx",
     ],
@@ -22,33 +22,33 @@ export default function Hero({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col items-center justify-evenly md:flex-row max-w-5xl mx-auto md:justify-between overflow-hidden">
-      <div>
-        <h1 className="max-w-5xl text-3xl md:text-4xl lg:text-6xl font-mono px-10 mb:py-178 text-center md:text-left pt-11">
+    <div className="h-screen flex flex-col items-center justify-evenly md:flex-row max-w-5xl mx-auto md:justify-between overflow-hidden ">
+      <div className="flex flex-col justify-start items-center md:items-start">
+        <h1 className="max-w-5xl text-3xl md:text-4xl lg:text-7xl font-black leading-[1.2] font-mono text-center md:text-left pt-11">
           <span>{text}</span>
-          <Cursor cursorColor="#ED2939" />
+          <Cursor cursorColor="#915eff" />
         </h1>
 
-        <div className="pt-10 md:max-w-5xl md:p-5">
+        <div className="pt-10 gap-1 md:max-w-5xl flex flex-row flex-wrap justify-evenly md:gap-5">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button className="heroButton bg-[#915eff]">About</button>
           </Link>
 
           <Link href="#experience">
-            <button className="heroButton">Experience</button>
+            <button className="heroButton bg-[#915eff]">Experience</button>
           </Link>
 
           <Link href="#skills">
-            <button className="heroButton">Skills</button>
+            <button className="heroButton bg-[#915eff]">Skills</button>
           </Link>
 
           <Link href="#projects">
-            <button className="heroButton">Projects</button>
+            <button className="heroButton bg-[#915eff]">Projects</button>
           </Link>
         </div>
       </div>
 
-      <div>
+      <div className="md:mx-[-5px]">
         <motion.img
           initial={{
             opacity: 0,

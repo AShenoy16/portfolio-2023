@@ -14,51 +14,49 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(0,0,0)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-primary text-white snap-y snap-mandatory overflow-scroll z-0">
       <Head>
         <title>AS Porfolio</title>
       </Head>
 
-      <Header />
+      <div>
+        <Header />
 
-      {/* Hero */}
-      {/* sections allow you to scroll back to that place*/}
-      <section id="hero" className="snap-center">
-        <Hero />
-      </section>
+        {/* Hero */}
+        {/* sections allow you to scroll back to that place*/}
+        <section id="hero" className="snap-center">
+          <Hero />
+        </section>
 
-      {/* About */}
+        {/* About */}
 
-      <section id="about" className="snap-start">
-        <About />
-      </section>
+        <section id="about" className="snap-start">
+          <About />
+        </section>
 
-      <section id="experience" className="snap-start">
-        <Experience />
-      </section>
-      {/* Experience */}
+        <section id="experience" className="snap-start">
+          <Experience />
+        </section>
+        {/* Experience */}
 
-      {/* Skills */}
+        {/* Skills */}
 
-      <section id="skills" className="snap-start">
-        <Skills />
-      </section>
+        <section id="skills" className="snap-start">
+          <Skills />
+        </section>
 
-      {/* Projects */}
+        {/* Projects */}
 
+        <section id="projects" className="snap-end">
+          <Projects />
+        </section>
 
-      <section id="projects" className="snap-start">
-        <Projects />
+        {/* Contact */}
 
-      </section>
-
-      {/* Contact */}
-
-      <section id="contact" className="snap-start">
-        <Contact />
-
-      </section>
-      
+        <section id="contact" className="snap-start">
+          <Contact />
+        </section>
+      </div>
     </div>
   );
 }
