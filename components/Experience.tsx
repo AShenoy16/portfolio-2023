@@ -67,7 +67,7 @@ function Experience({}: Props) {
     <div>
       <motion.div
         variants={textVariant()}
-        className="flex-col text-center max-w-7xl justify-evenly mx-auto py-20"
+        className="flex-col text-center max-w-5xl justify-evenly mx-auto py-20"
       >
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Experience

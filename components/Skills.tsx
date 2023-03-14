@@ -40,7 +40,7 @@ function Skills({}: Props) {
     <div className="h-screen flex flex-col justify-evenly items-center">
       <motion.div
         variants={textVariant()}
-        className="flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+        className="flex relative flex-col text-center md:text-left md:flex-row max-w-5xl px-10 justify-evenly mx-auto items-center"
       >
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Skills.

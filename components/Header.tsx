@@ -9,7 +9,7 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black`}
+      className={`${styles.paddingX} w-full flex items-center py-2 fixed top-0 z-20 bg-black`}
     >
       {/* Above makes it stick to the top and automatically splits the icons in between */}
       {/* Also layers it above everything else and keeps max width between them */}
