@@ -48,15 +48,19 @@ function About({}: Props) {
         className="flex flex-col max-w-5xl justify-evenly mx-auto py-20 md:px-6 lg:px-0"
       >
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mx-7 md:mx-0 lg:mx-0">
-          A little <span className="text-[#915eff]">about me</span> 
+          A little <span className="text-[#915eff]">about me</span>
         </h2>
         <p className=" lg:mx-10 lg:ml-auto mt-10 mx-7 md:mx-0 md:ml-auto">
-          I'm a skilled software developer with experience in TypeScript and //
-          JavaScript, and expertise in frameworks like React, Node.js, and //
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          // create efficient, scalable, and user-friendly solutions that solve
-          // real-world problems. Let's work together to bring your ideas to
-          life!
+          Welcome to my portfolio! As an aspiring full-stack developer, I bring
+          a solid foundation in software engineering principles and a passion
+          for innovation. My proficiency in front-end technologies, combined
+          with my strong fundamentals in software engineering, equip me with the
+          necessary skills to succeed in the field. I am eager to gain practical
+          experience through an internship and contribute to your team's
+          success. With excellent collaboration skills and a dedication to
+          delivering exceptional results, I am confident that I can make
+          valuable contributions to your organisation. Let's work together to
+          build the future of software development!
         </p>
       </motion.div>
 
@@ -69,28 +73,5 @@ function About({}: Props) {
   );
 }
 
-// function About({}: Props) {
-//   return (
-//     <div className="flex flex-col justify-center items-center px-8 mt-20">
-//       <motion.div variants={textVariant()}>
-//         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.</h2>
-//       </motion.div>
-
-//       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-center max-w-5xl">
-//         I'm a skilled software developer with experience in TypeScript and
-//         JavaScript, and expertise in frameworks like React, Node.js, and
-//         Three.js. I'm a quick learner and collaborate closely with clients to
-//         create efficient, scalable, and user-friendly solutions that solve
-//         real-world problems. Let's work together to bring your ideas to life!
-//       </motion.p>
-
-// <div className="mt-20 gap-10 flex flex-wrap justify-center max-w-5xl">
-//   {services.map((service, index) => (
-//     <ServiceCard key={service.title} index={index} {...service} />
-//   ))}
-// </div>
-//     </div>
-//   );
-// }
 
 export default About;
