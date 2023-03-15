@@ -20,12 +20,12 @@ function Contact({}: Props) {
   };
 
   return (
-    <div className=" mt-20 xl:flex-row gap-10 overflow-hidden">
+    <div className="mt-20 pt-20 md:flex-row overflow-hidden flex flex-col items-center md:justify-center md:mt-20 md:pt-20">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl w-[340px]"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>Lets <span className="text-[#915eff]">create</span> something together!</p>
 
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
@@ -34,47 +34,43 @@ function Contact({}: Props) {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your name</span>
             <input
               {...register("name")}
-              placeholder="What is your name?"
+              placeholder="Name"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
               type="text"
             />
           </label>
 
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your Email</span>
             <input
               {...register("email")}
-              placeholder="What is your email?"
+              placeholder="Email"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
               type="email"
             />
           </label>
 
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your Subject</span>
             <input
               {...register("subject")}
-              placeholder="What is the subject?"
+              placeholder="Subject"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
               type="text"
             />
           </label>
 
           <label className="flex flex-col">
-            <span className="mb-4 font-medium text-white">Your Message</span>
             <textarea
               {...register("message")}
               rows={7}
-              placeholder="What do you want to say?"
+              placeholder="Message"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
             />
           </label>
 
           <button
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md rounded-xl shadow-primary"
+            className="bg-tertiary py-3 px-8 outline-none w-full md:w-fit text-white font-bold shadow-md rounded-xl shadow-primary hover:opacity-80 hover:bg-green-500 hover:scale-110"
             type="submit"
           >
             {" "}
