@@ -28,8 +28,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="green-pink-gradient p-[3px] rounded-2xl">
+      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt className="bg-tertiary p-5 rounded-2xl w-[320px]">
           <div className="relative w-full h-[200px]">
             <img
