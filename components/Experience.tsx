@@ -70,11 +70,11 @@ function Experience({}: Props) {
         className="flex-col text-center max-w-5xl justify-evenly mx-auto py-20"
       >
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          Experience
+          My <span className="text-[#915eff]">Experience</span>
         </h2>
       </motion.div>
 
-      <div className="mt-[-70px] md:mt-[-20px] flex flex-col">
+      <div className="mt-[-70px] md:mt-[-20px] flex flex-col mr-7 ml-4 md:mr-3.5 md:ml-0 lg:px-10 lg:mr-11 lg:ml-8">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <WorkExperienceCard key={index} experience={experience} />

@@ -60,7 +60,7 @@ function About({}: Props) {
         </p>
       </motion.div>
 
-      <div className="mt-20 gap-10 flex flex-wrap justify-center mx-5 md:mx-4">
+      <div className="mt-20 gap-10 flex flex-wrap justify-center mx-5">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

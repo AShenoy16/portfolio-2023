@@ -3,6 +3,7 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { logo } from "@/assets";
 import { styles } from "@/styles/styles";
+import Link from "next/link";
 
 type Props = {};
 
