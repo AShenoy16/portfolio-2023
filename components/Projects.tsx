@@ -28,7 +28,8 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="green-pink-gradient p-[3px] rounded-2xl">
         <Tilt className="bg-tertiary p-5 rounded-2xl w-[320px]">
           <div className="relative w-full h-[200px]">
             <img
@@ -84,7 +85,7 @@ function Projects({}: Props) {
       </motion.div>
 
       <div className="flex flex-col justify-center items-center md:flex-row flex-wrap">
-        <div className="flex flex-wrap gap-7 justify-start mx-10 px-6 md:mx-1 md:px-5 lg:mr-3 lg:mx-0">
+        <div className="flex flex-wrap gap-7 justify-start mx-10 px-6 md:mx-1 md:px-5 lg:mr-[-2px] lg:mx-3">
           {projects.map((project, index) => (
             <ProjectCard key={"project-${index}"} index={index} {...project} />
           ))}

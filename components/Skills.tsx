@@ -18,7 +18,7 @@ const SkillCard = ({ icon, name, index, progress }: SkillCardProps) => {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
-        <div className="bg-tertiary rounded-full h-20 w-20 md:h-28 md:w-28 lg:w-32 lg:h-32">
+        <div className="bg-tertiary rounded-full  h-20 w-20 md:h-28 md:w-28 lg:w-32 lg:h-32">
           <img
             src={icon.src}
             alt="web-development"

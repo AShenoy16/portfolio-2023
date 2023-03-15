@@ -25,15 +25,14 @@ function Contact({}: Props) {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl w-[340px]"
       >
-        <p className={styles.sectionSubText}>Lets <span className="text-[#915eff]">create</span> something together!</p>
 
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <h3 className={styles.sectionHeadText}><span className="text-[#915eff]">Contact</span></h3>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="mt-12 flex flex-col gap-8"
         >
-          <label className="flex flex-col">
+          <label className="flex flex-col green-pink-gradient p-[3px] rounded-lg">
             <input
               {...register("name")}
               placeholder="Name"
@@ -42,7 +41,7 @@ function Contact({}: Props) {
             />
           </label>
 
-          <label className="flex flex-col">
+          <label className="flex flex-col green-pink-gradient p-[3px] rounded-lg">
             <input
               {...register("email")}
               placeholder="Email"
@@ -51,7 +50,7 @@ function Contact({}: Props) {
             />
           </label>
 
-          <label className="flex flex-col">
+          <label className="flex flex-col green-pink-gradient p-[3px] rounded-lg ">
             <input
               {...register("subject")}
               placeholder="Subject"
@@ -60,7 +59,7 @@ function Contact({}: Props) {
             />
           </label>
 
-          <label className="flex flex-col">
+          <label className="flex flex-col green-pink-gradient p-[3px] rounded-lg">
             <textarea
               {...register("message")}
               rows={7}
