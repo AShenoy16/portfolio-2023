@@ -20,7 +20,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
     <Tilt className="mb:w-[250px] w-48">
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full green-pink-gradient p-[3px] rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[230px] flex justify-evenly items-center flex-col">
           <img
@@ -45,9 +45,9 @@ function About({}: Props) {
     <div className="flex flex-col">
       <motion.div
         variants={textVariant()}
-        className="flex flex-col max-w-5xl justify-evenly mx-auto py-20 md:px-6 lg:px-0"
+        className="flex flex-col max-w-5xl justify-evenly mx-auto py-20 md:px-6 lg:px-0 items-center"
       >
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mx-7 md:mx-0 lg:mx-0">
+        <h2 className="font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mx-7 md:mx-0 lg:mx-0">
           A little <span className="text-[#915eff]">about me</span>
         </h2>
         <p className=" lg:mx-10 lg:ml-auto mt-10 mx-7 md:mx-0 md:ml-auto">

@@ -70,7 +70,7 @@ function Experience({}: Props) {
         className="flex-col text-center max-w-5xl justify-evenly mx-auto py-20"
       >
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          My <span className="text-[#915eff]">Experience</span>
+          <span className="text-[#915eff]">Experience</span>
         </h2>
       </motion.div>
 

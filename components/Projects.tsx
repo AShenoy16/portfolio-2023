@@ -29,7 +29,7 @@ const ProjectCard = ({
   return (
     <div>
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[320px] w-full">
+        <Tilt className="bg-tertiary p-5 rounded-2xl w-[320px]">
           <div className="relative w-full h-[200px]">
             <img
               src={image.src}
@@ -76,23 +76,15 @@ function Projects({}: Props) {
     <div>
       <motion.div
         variants={textVariant()}
-        className="flex-col text-center max-w-5xl justify-evenly mx-auto py-20"
+        className="flex-col max-w-5xl justify-evenly mx-auto py-20"
       >
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          Projects
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] flex justify-center">
+          <span className="text-[#915eff]">Projects</span>
         </h2>
       </motion.div>
 
-      <div className="flex flex-col justify-center items-center">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className=" text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          blanditiis.
-        </motion.p>
-
-        <div className="mt-20 flex flex-wrap gap-7 justify-start">
+      <div className="flex flex-col justify-center items-center md:flex-row flex-wrap">
+        <div className="flex flex-wrap gap-7 justify-start mx-10 px-6 md:mx-1 md:px-5 lg:mr-3 lg:mx-0">
           {projects.map((project, index) => (
             <ProjectCard key={"project-${index}"} index={index} {...project} />
           ))}
