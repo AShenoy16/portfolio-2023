@@ -4,8 +4,8 @@
 
 @layer components{
     .heroButton {
-        @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest
-        transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
+        @apply px-6 py-2 rounded-full uppercase tracking-widest
+        transition-all hover:text-white/40 font-bold font-mono hover:scale-95
     }
 }
 
@@ -37,6 +37,8 @@
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  border-image: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) 1;
+  border-image-slice: 20;
 }
 
 .orange-text-gradient {

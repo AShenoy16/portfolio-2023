@@ -47,10 +47,10 @@ function About({}: Props) {
         variants={textVariant()}
         className="flex flex-col max-w-5xl justify-evenly mx-auto py-20 md:px-6 lg:px-0 items-center"
       >
-        <h2 className="font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mx-7 md:mx-0 lg:mx-0">
-          A little <span className="text-[#915eff]">about me</span>
+        <h2 className="font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mx-7 md:mx-0 lg:mx-0 font-mono">
+          <span className="text-[#7b40fa]">About </span>Me
         </h2>
-        <p className=" lg:mx-10 lg:ml-auto mt-10 mx-7 md:mx-0 md:ml-auto">
+        <p className="text-[17px] text-white lg:mx-10 lg:ml-auto mt-10 mx-7 md:mx-0 md:ml-auto font-mono">
           Welcome to my portfolio! As an aspiring full-stack developer, I bring
           a solid foundation in software engineering principles and a passion
           for innovation. My proficiency in front-end technologies, combined

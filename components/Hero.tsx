@@ -32,19 +32,19 @@ export default function Hero({}: Props) {
 
         <div className="pt-7 gap-1 flex flex-col justify-evenly items-start md:gap-5 md:px-7 lg:px-0 md:flex-row">
           <Link href="#about">
-            <button className="heroButton bg-[#915eff] min-w-[130px]">About</button>
+            <button className=" heroButton bg-[#7b40fa] min-w-[150px]">About</button>
           </Link>
 
           <Link href="#experience">
-            <button className="heroButton bg-[#915eff] min-w-[130px]">Experience</button>
+            <button className="heroButton bg-[#7b40fa] min-w-[150px]">Experience</button>
           </Link>
 
           <Link href="#skills">
-            <button className="heroButton bg-[#915eff] min-w-[130px]">Skills</button>
+            <button className="heroButton bg-[#7b40fa] min-w-[150px]">Skills</button>
           </Link>
 
           <Link href="#projects">
-            <button className="heroButton bg-[#915eff] min-w-[130px]">Projects</button>
+            <button className="heroButton bg-[#7b40fa] min-w-[150px]">Projects</button>
           </Link>
         </div>
       </div>
