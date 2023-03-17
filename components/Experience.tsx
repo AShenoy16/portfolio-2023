@@ -30,6 +30,7 @@ const WorkExperienceCard = ({ experience }: WorkExperienceCardProps) => {
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
+      className="font-mono"
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
@@ -41,8 +42,8 @@ const WorkExperienceCard = ({ experience }: WorkExperienceCardProps) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-        <p className="text-secondary text-[16px] font-semibold" style={{margin:0}}>{experience.company_name}</p>
+        <h3 className="text-white text-[24px] font-bold font-mono">{experience.title}</h3>
+        <p className="text-secondary text-[16px] font-semibold font-mono" style={{margin:0}}>{experience.company_name}</p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -50,7 +51,7 @@ const WorkExperienceCard = ({ experience }: WorkExperienceCardProps) => {
 
             <li
                 key={'experience-point-${index}'}
-                className="text-white-100 text-[14px] pl-1 tracking-wider"
+                className="text-white-100 text-[14px] pl-1 tracking-wider font-mono"
                 >
                     {point}
             </li>
@@ -69,8 +70,8 @@ function Experience({}: Props) {
         variants={textVariant()}
         className="flex-col text-center max-w-5xl justify-evenly mx-auto py-20"
       >
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          <span className="text-[#915eff]">Experience</span>
+        <h2 className="text-white font-black font-mono md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+          <span className="text-[#7b40fa]">Experience</span>
         </h2>
       </motion.div>
 

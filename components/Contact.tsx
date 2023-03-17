@@ -4,6 +4,8 @@ import { styles } from "@/styles/styles";
 import { slideIn } from "@/utils/motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 
+
+
 type Props = {};
 
 type Inputs = {
@@ -26,7 +28,7 @@ function Contact({}: Props) {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl w-[340px]"
       >
 
-        <h3 className={styles.sectionHeadText}><span className="text-[#915eff]">Contact</span></h3>
+        <h3 className={styles.sectionHeadText}><span className="text-[#7b40fa] font-mono">Contact</span></h3>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -36,7 +38,7 @@ function Contact({}: Props) {
             <input
               {...register("name")}
               placeholder="Name"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none font-mono"
               type="text"
             />
           </label>
@@ -45,7 +47,7 @@ function Contact({}: Props) {
             <input
               {...register("email")}
               placeholder="Email"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none font-mono"
               type="email"
             />
           </label>
@@ -54,7 +56,7 @@ function Contact({}: Props) {
             <input
               {...register("subject")}
               placeholder="Subject"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none font-mono"
               type="text"
             />
           </label>
@@ -64,12 +66,12 @@ function Contact({}: Props) {
               {...register("message")}
               rows={7}
               placeholder="Message"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg border-none font-mono"
             />
           </label>
 
           <button
-            className="bg-tertiary py-3 px-8 outline-none w-full md:w-fit text-white font-bold shadow-md rounded-xl shadow-primary hover:opacity-80 hover:bg-green-500 hover:scale-110"
+            className="bg-tertiary py-3 px-8 outline-none w-full md:w-fit text-white font-bold shadow-md rounded-xl shadow-primary hover:opacity-80 hover:bg-green-500 hover:scale-110 font-mono"
             type="submit"
           >
             {" "}

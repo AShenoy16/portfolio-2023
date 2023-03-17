@@ -52,14 +52,14 @@ const ProjectCard = ({
           </div>
 
           <div>
-            <h3 className="text-white font-bold text-[24px]">
+            <h3 className="text-white font-bold text-[24px] font-mono">
               {name}
               <p className="mt-2 text-secondary text-[14px]">{description}</p>
             </h3>
 
             <div className="mt-5 flex flex-row gap-2">
               {tags.map((tag) => (
-                <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                <p key={tag.name} className={`text-[14px] font-mono ${tag.color}`}>
                   #{tag.name}
                 </p>
               ))}
@@ -78,13 +78,13 @@ function Projects({}: Props) {
         variants={textVariant()}
         className="flex-col max-w-5xl justify-evenly mx-auto py-20"
       >
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] flex justify-center">
-          <span className="text-[#915eff]">Projects</span>
+        <h2 className="text-white font-mono font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] flex justify-center">
+          <span className="text-[#7b40fa]">Projects</span>
         </h2>
       </motion.div>
 
       <div className="flex flex-col justify-center items-center md:flex-row flex-wrap">
-        <div className="flex flex-wrap gap-7 justify-start mx-10 px-6 md:mx-1 md:px-5 lg:mr-[-2px] lg:mx-3">
+        <div className="flex flex-wrap gap-7 justify-start mx-6 px-6 md:mx-1 md:px-5 lg:mr-[-2px] lg:mx-3">
           {projects.map((project, index) => (
             <ProjectCard key={"project-${index}"} index={index} {...project} />
           ))}

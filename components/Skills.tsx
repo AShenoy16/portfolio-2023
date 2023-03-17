@@ -26,7 +26,7 @@ const SkillCard = ({ icon, name, index, progress }: SkillCardProps) => {
           />
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 md:h-28 md:w-28 lg:w-32 lg:h-32 rounded-full z-0">
-            <p className="md:text-3xl font-bold text-black">{progress}%</p>
+            <p className="md:text-3xl font-bold text-black font-mono">{progress}%</p>
           </div>
         </div>
       </motion.div>
@@ -43,8 +43,8 @@ function Skills({}: Props) {
         variants={textVariant()}
         className="flex relative flex-col justify-evenly items-center"
       >
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          My <span className="text-[#915eff]">Skills</span>
+        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] font-mono">
+          <span className="text-[#7b40fa]">Skills</span>
         </h2>
       </motion.div>
 
