@@ -1,12 +1,15 @@
 import logo from "./logo-white.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
+import backend2 from "./backend2.png";
+import creator from "./creator3.png";
+import mobile2 from "./mobile2.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import adi from "./adi.png"
+import web2 from "./web2.png";
+import trouble from "./trouble2.png";
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -22,10 +25,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import gb from "./company/gb.png";
+import sensational from "./company/sensational.png";
+import lynfield from "./company/lynfield.png";
+import uoa from "./company/uoa.png";
 
 import quickDrawImage from "./quickDrawImage.png";
 import ResearchTrust from "./ResearchTrust.png";
@@ -33,10 +36,12 @@ import portfolioImage from "./portfolioImage.png";
 
 export {
   logo,
-  backend,
+  backend2,
   creator,
-  mobile,
+  mobile2,
   web,
+  web2,
+  trouble,
   github,
   menu,
   close,
@@ -53,32 +58,32 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  gb,
+  sensational,
+  lynfield,
   quickDrawImage,
   ResearchTrust,
   adi,
   portfolioImage,
+  uoa,
 };
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Innovator",
-    icon: mobile,
-  },
-  {
     title: "Software Engineer",
+    icon: trouble,
+  },
+  {
+    title: "Fullstack Developer",
     icon: creator,
+  },
+  {
+    title: "Trouble Shooter",
+    icon: web2,
+  },
+  {
+    title: "Aspiring Entrepreneur",
+    icon: mobile2,
   },
 ];
 
@@ -109,27 +114,27 @@ const technologies = [
     progress: 88
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-    progress: 88
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
     progress: 88
   },
   {
-    name: "Node JS",
+    name: "Next JS",
     icon: nodejs,
     progress: 88
   },
   {
-    name: "MongoDB",
+    name: "Java",
+    icon: nodejs,
+    progress: 88
+  },
+  {
+    name: "Python",
     icon: mongodb,
     progress: 88
   },
   {
-    name: "Three JS",
+    name: "C",
     icon: threejs,
     progress: 88
   },
@@ -139,7 +144,7 @@ const technologies = [
     progress: 88
   },
   {
-    name: "figma",
+    name: "Matlab",
     icon: figma,
     progress: 88
 
@@ -150,7 +155,7 @@ const experiences = [
   {
     title: "House Leader",
     company_name: "Lynfield College",
-    icon: starbucks,
+    icon: lynfield,
     iconBg: "#383E56",
     date: "February 2020 - December 2020",
     points: [
@@ -162,7 +167,7 @@ const experiences = [
   {
     title: "Admin Assistant",
     company_name: "Gallagher Basset",
-    icon: tesla,
+    icon: gb,
     iconBg: "#E6DEDD",
     date: "December 2020 - Feb 2021",
     points: [
@@ -174,7 +179,7 @@ const experiences = [
   {
     title: "Research Assistant",
     company_name: "University of Auckland",
-    icon: shopify,
+    icon: uoa,
     iconBg: "#383E56",
     date: "Nov 2022 - Feb 2023",
     points: [
@@ -186,7 +191,7 @@ const experiences = [
   {
     title: "Food Service Associate",
     company_name: "Sensational Chicken",
-    icon: meta,
+    icon: sensational,
     iconBg: "#E6DEDD",
     date: "Nov 2023 - Mar 2023",
     points: [

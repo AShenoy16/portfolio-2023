@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
 import { adi } from "@/assets";
+import { fadeIn } from "@/utils/motion";
 
 https: type Props = {};
 
@@ -31,7 +32,8 @@ export default function Hero({}: Props) {
           <Cursor cursorColor="#915eff" />
         </h1>
 
-        <div className="pt-7 gap-1 flex flex-col justify-evenly items-start md:gap-5 md:px-7 lg:px-0 md:flex-row">
+        <div 
+        className="pt-7 gap-1 flex flex-col justify-evenly items-start md:gap-5 md:px-7 lg:px-0 md:flex-row">
           <Link href="#about">
             <button className=" heroButton bg-[#7b40fa] min-w-[150px]">About</button>
           </Link>
