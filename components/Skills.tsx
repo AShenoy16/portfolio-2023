@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "@/utils/motion";
 import { styles } from "../styles/styles";
 import { technologies } from "@/assets";
 import { StaticImageData } from "next/image";
-import BackgroundCircles from "./BackgroundCircles";
 
 interface SkillCardProps {
   name: string;
