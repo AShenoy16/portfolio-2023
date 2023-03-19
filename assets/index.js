@@ -4,8 +4,6 @@ import creator from "./creator3.png";
 import mobile2 from "./mobile2.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 import adi from "./adi.png"
 import web2 from "./web2.png";
 import trouble from "./trouble2.png";
@@ -42,8 +40,6 @@ export {
   web2,
   trouble,
   github,
-  menu,
-  close,
   css,
   matlab,
   git,
