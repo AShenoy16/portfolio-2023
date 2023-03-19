@@ -1,10 +1,9 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 import { styles } from "@/styles/styles";
 import { github } from "@/assets";
 import { projects } from "@/assets";
-import { fadeIn, textVariant } from "@/utils/motion";
 import { StaticImageData } from "next/image";
 
 type Props = {};

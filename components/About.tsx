@@ -2,8 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { services } from "../assets";
 import { trouble, creator, web2, mobile2 } from "../assets/index";
-import Tilt from "react-tilt";
-import { fadeIn, textVariant } from "../utils/motion";
+import Tilt from 'react-parallax-tilt';
 import { styles } from "../styles/styles";
 
 import type { StaticImageData } from "next/image";
