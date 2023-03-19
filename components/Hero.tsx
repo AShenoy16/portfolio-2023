@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
 import { adi } from "@/assets";
-import { fadeIn } from "@/utils/motion";
 
 https: type Props = {};
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "@/styles/styles";
-import { slideIn } from "@/utils/motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 
@@ -18,7 +17,7 @@ type Inputs = {
 function Contact({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:dantebhag0510@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    window.location.href = `mailto:codingas10@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
 
   return (

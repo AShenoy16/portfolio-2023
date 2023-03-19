@@ -5,7 +5,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles/styles";
 import { experiences } from "@/assets";
 import { StaticImageData } from "next/image";
