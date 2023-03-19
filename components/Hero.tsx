@@ -1,7 +1,6 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
 import { adi } from "@/assets";
 
