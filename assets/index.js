@@ -20,7 +20,7 @@ import reactjs from "./tech/reactjs.png";
 import nodejs from "./tech/nodejs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import c from "./tech/c.png";
+import c from "./tech/C.png";
 
 import gb from "./company/gb.png";
 import sensational from "./company/sensational.png";
