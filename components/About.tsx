@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { services } from "../assets";
 import { trouble, creator, web2, mobile2 } from "../assets/index";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 import { styles } from "../styles/styles";
 
 import type { StaticImageData } from "next/image";
@@ -75,11 +75,11 @@ function About({}: Props) {
           for innovation. My proficiency in front-end technologies, combined
           with my strong fundamentals in software engineering, equip me with the
           necessary skills to succeed in the field. I am eager to gain practical
-          experience through an internship and contribute to your team's
+          experience through an internship and contribute to your team&apos;s
           success. With excellent collaboration skills and a dedication to
           delivering exceptional results, I am confident that I can make
-          valuable contributions to your organisation. Let's work together to
-          build the future of software development!
+          valuable contributions to your organisation. Let&apos;s work together
+          to build the future of software development!
         </p>
       </motion.div>
 
