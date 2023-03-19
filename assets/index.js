@@ -12,18 +12,17 @@ import trouble from "./trouble2.png";
 
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import matlab from "./tech/matlab.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import nodejs from "./tech/nodejs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import c from "./tech/c.png";
 
 import gb from "./company/gb.png";
 import sensational from "./company/sensational.png";
@@ -46,18 +45,17 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
+  matlab,
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
+  python,
+  java,
   reactjs,
-  redux,
+  nodejs,
   tailwind,
   typescript,
-  threejs,
+  c,
   gb,
   sensational,
   lynfield,
@@ -91,62 +89,62 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
-    progress: 88
+    progress: 45
   },
   {
     name: "CSS 3",
     icon: css,
-    progress: 88
+    progress: 50
   },
   {
     name: "JavaScript",
     icon: javascript,
-    progress: 88
+    progress: 63
   },
   {
     name: "TypeScript",
     icon: typescript,
-    progress: 88
+    progress: 60
   },
   {
     name: "React JS",
     icon: reactjs,
-    progress: 88
+    progress: 65
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-    progress: 88
+    progress: 70
   },
   {
-    name: "Next JS",
+    name: "Node JS",
     icon: nodejs,
-    progress: 88
+    progress: 45
   },
   {
     name: "Java",
-    icon: nodejs,
-    progress: 88
+    icon: java,
+    progress: 80
   },
   {
     name: "Python",
-    icon: mongodb,
-    progress: 88
+    icon: python,
+    progress: 85
   },
   {
     name: "C",
-    icon: threejs,
-    progress: 88
+    icon: c,
+    progress: 70
   },
   {
     name: "git",
     icon: git,
-    progress: 88
+    progress: 75
   },
   {
     name: "Matlab",
-    icon: figma,
-    progress: 88
+    icon: matlab,
+    progress: 65
 
   },
 ];
