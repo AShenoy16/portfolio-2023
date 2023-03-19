@@ -28,7 +28,19 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div>
-      <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
+      >
         <Tilt className="bg-tertiary p-5 rounded-2xl w-[320px]">
           <div className="relative w-full h-[200px]">
             <img
@@ -59,7 +71,10 @@ const ProjectCard = ({
 
             <div className="mt-5 flex flex-row gap-2">
               {tags.map((tag) => (
-                <p key={tag.name} className={`text-[14px] font-mono ${tag.color}`}>
+                <p
+                  key={tag.name}
+                  className={`text-[14px] font-mono ${tag.color}`}
+                >
                   #{tag.name}
                 </p>
               ))}
@@ -75,7 +90,17 @@ function Projects({}: Props) {
   return (
     <div>
       <motion.div
-        variants={textVariant()}
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
         className="flex-col max-w-5xl justify-evenly mx-auto py-20"
       >
         <h2 className="text-white font-mono font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] flex justify-center">

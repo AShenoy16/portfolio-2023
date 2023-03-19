@@ -42,23 +42,27 @@ const WorkExperienceCard = ({ experience }: WorkExperienceCardProps) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold font-mono">{experience.title}</h3>
-        <p className="text-secondary text-[16px] font-semibold font-mono" style={{margin:0}}>{experience.company_name}</p>
+        <h3 className="text-white text-[24px] font-bold font-mono">
+          {experience.title}
+        </h3>
+        <p
+          className="text-secondary text-[16px] font-semibold font-mono"
+          style={{ margin: 0 }}
+        >
+          {experience.company_name}
+        </p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index)=>(
-
-            <li
-                key={'experience-point-${index}'}
-                className="text-white-100 text-[14px] pl-1 tracking-wider font-mono"
-                >
-                    {point}
-            </li>
+        {experience.points.map((point, index) => (
+          <li
+            key={"experience-point-${index}"}
+            className="text-white-100 text-[14px] pl-1 tracking-wider font-mono"
+          >
+            {point}
+          </li>
         ))}
-
       </ul>
-
     </VerticalTimelineElement>
   );
 };
@@ -66,16 +70,17 @@ const WorkExperienceCard = ({ experience }: WorkExperienceCardProps) => {
 function Experience({}: Props) {
   return (
     <div>
-      <motion.div
-        variants={textVariant()}
+      <div
         className="flex-col text-center max-w-5xl justify-evenly mx-auto py-20"
       >
         <h2 className="text-white font-black font-mono md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           <span className="text-[#7b40fa]">Experience</span>
         </h2>
-      </motion.div>
+      </div>
 
-      <div className="mt-[-70px] md:mt-[-20px] flex flex-col mr-7 ml-4 md:mr-3.5 md:ml-0 lg:px-10 lg:mr-11 lg:ml-8">
+      <div
+        className="mt-[-70px] md:mt-[-20px] flex flex-col mr-7 ml-4 md:mr-3.5 md:ml-0 lg:px-10 lg:mr-11 lg:ml-8"
+      >
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <WorkExperienceCard key={index} experience={experience} />

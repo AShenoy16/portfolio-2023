@@ -13,11 +13,22 @@ interface SkillCardProps {
   progress: number;
 }
 
-
 const SkillCard = ({ icon, name, index, progress }: SkillCardProps) => {
   return (
     <div className="group relative flex cursor-pointer">
-      <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
+      >
         <div className="bg-tertiary rounded-full  h-20 w-20 md:h-28 md:w-28 lg:w-32 lg:h-32">
           <img
             src={icon.src}
@@ -26,7 +37,9 @@ const SkillCard = ({ icon, name, index, progress }: SkillCardProps) => {
           />
 
           <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white h-20 w-20 md:h-28 md:w-28 lg:w-32 lg:h-32 rounded-full z-0">
-            <p className="md:text-3xl font-bold text-black font-mono">{progress}%</p>
+            <p className="md:text-3xl font-bold text-black font-mono">
+              {progress}%
+            </p>
           </div>
         </div>
       </motion.div>
@@ -40,7 +53,17 @@ function Skills({}: Props) {
   return (
     <div className="h-screen flex flex-col justify-evenly items-center">
       <motion.div
-        variants={textVariant()}
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
         className="flex relative flex-col justify-evenly items-center"
       >
         <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] font-mono">

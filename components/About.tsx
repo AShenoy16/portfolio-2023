@@ -19,7 +19,17 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
   return (
     <Tilt className="mb:w-[250px] w-48">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5, 0.75)}
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 1,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
         className="w-full green-pink-gradient p-[3px] rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[230px] flex justify-evenly items-center flex-col">
@@ -44,7 +54,17 @@ function About({}: Props) {
   return (
     <div className="flex flex-col">
       <motion.div
-        variants={textVariant()}
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 1,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
         className="flex flex-col max-w-5xl justify-evenly mx-auto py-20 md:px-6 lg:px-0 items-center"
       >
         <h2 className="font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mx-7 md:mx-0 lg:mx-0 font-mono">
@@ -72,6 +92,5 @@ function About({}: Props) {
     </div>
   );
 }
-
 
 export default About;

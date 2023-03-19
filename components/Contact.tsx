@@ -18,13 +18,23 @@ type Inputs = {
 function Contact({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:codingas10@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    window.location.href = `mailto:dantebhag0510@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
 
   return (
     <div className="mt-20 pt-20 md:flex-row overflow-hidden flex flex-col items-center md:justify-center md:mt-20 md:pt-20">
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl w-[340px]"
       >
 
