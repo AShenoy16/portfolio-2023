@@ -82,7 +82,7 @@ export default function Hero({}: Props) {
           transition={{
             duration: 1.8,
           }}
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ExNZIUHWBR_yH3e_7Ano1gHaI8%26pid%3DApi&f=1&ipt=a931befd3360d9e75c964438916ec0a8dfd1e071900fdd2d06e89df5df50fa7b&ipo=images"
+          src={adi.src}
           className="mb:mb-0 flex-shrink-0 w-56 h-56 rounded-full justify-center object-cover md:rounded-lg md:w-60 md:h-95 xl:w-[250px] xl:h-[350px] md:px-5"
         />
       </div>
